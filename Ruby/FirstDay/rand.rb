@@ -13,7 +13,7 @@ while true
 	elsif num < target
 		puts("Too small, try again.\n")
 	else
-		puts("bingo, the number is ".target.to_s)
+		puts "bingo, the number is ".(target.to_int())
 		break
 	end
 end
