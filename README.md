@@ -1,5 +1,3 @@
-# JMSevenLanguages
-
-### Seven Languages in Seven Weeks
+## Seven Languages in Seven Weeks
 
 
