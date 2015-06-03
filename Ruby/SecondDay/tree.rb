@@ -2,17 +2,25 @@
 
 class Tree
   attr_accessor :children, :node_name
-                      
+  
+  def initialize(name, children)
+    @children = children
+    @name = name
+  end                    
+
   def initialize(tree)
     tree.each do |key, value|
       @node_name = key
-      @children = value.map {|(key,value)| Tree.new(key => value)}
+      @children = value.map { 
+        |(key, value)| 
+        Tree.new(key => value)  # 递归
+      }
     end
   end
                       
   def visit_all(&block)
     visit &block
-    children.each {|c| c.visit_all &block}
+    children.each { |c| c.visit_all &block}
   end
                       
   def visit(&block)
@@ -28,5 +36,6 @@ ruby_tree = Tree.new(
       }
     })
 
-
+ruby_tree.visit_all {|node| puts node.node_name}
+# ruby_tree.visit {|node| puts node.node_name}
 
