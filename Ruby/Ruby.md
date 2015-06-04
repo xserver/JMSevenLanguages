@@ -12,6 +12,13 @@ http://blog.shaofantasy.cn/?tag=Seven%20Languages%20In%20Seven%20Weeks
 数组，有序，
 散列（哈希）- 字典，dictionary
 
+## DSL(domain-specific language) 领域特定语言，元编程
+自由地组合模块（类、方法、属性），产生出新的类
+这个概念需要进一步学习
+
+## 鸭子类型 ？
+
+
 
 ### 第一感觉
 
@@ -21,5 +28,6 @@ http://blog.shaofantasy.cn/?tag=Seven%20Languages%20In%20Seven%20Weeks
 #### 全对象
 3.class 
 
-### 简洁
+### 简洁、灵活
 Block 比 C++，OC，Java 简洁太多了。
+DSL
