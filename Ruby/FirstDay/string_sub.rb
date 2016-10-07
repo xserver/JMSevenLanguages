@@ -25,11 +25,11 @@ puts()
 n = 0
 while (n < 3)
 	n = n+1
-	puts "This is sentence number"+n.to_s+"."
+	puts "This is sentence number" + n.to_s + "."
 end
 
 for i in 1..3
-	puts "This is sentence number"+i.to_s+"."
+	puts "This is sentence number" + i.to_s + "."
 end
 
 

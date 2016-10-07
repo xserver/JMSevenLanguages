@@ -7,12 +7,12 @@ array = []
 	array << number
 end
 
+p 'array length = '
 puts array.length
 puts
 
 index = 0
-array.each do
-	|item|
+array.each do |item|
 	if index % 4 == 0
 		print "\n"
 	end
