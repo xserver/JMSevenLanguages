@@ -5,8 +5,13 @@ http://blog.shaofantasy.cn/?tag=Seven%20Languages%20In%20Seven%20Weeks
 [Ruby 练习](http://blog.shaofantasy.cn/?tag=Ruby)
 
 [w3c Ruby tutorial](http://www.w3cschool.cc/ruby/ruby-tutorial.html)
+[Ruby tutorial](http://www.runoob.com/ruby)
 
 [Ruby 第三天 CSV](http://www.bennadel.com/blog/2063-seven-languages-in-seven-weeks-ruby-day-3.htm)
+
+
+
+
 
 函数
 数组，有序，
@@ -15,6 +20,7 @@ http://blog.shaofantasy.cn/?tag=Seven%20Languages%20In%20Seven%20Weeks
 ## DSL(domain-specific language) 领域特定语言，元编程
 自由地组合模块（类、方法、属性），产生出新的类
 这个概念需要进一步学习
+
 
 ## 鸭子类型 ？
 
@@ -101,6 +107,12 @@ Mach.sqrt(100)
 
 true, false = nil
 
+
+case
+when
+else
+end
+
 #### 循环语句
 ``` ruby
 while condition
@@ -135,3 +147,14 @@ address[name]
 ## regular expression, 正则
 pattern
 /content A/i = ~ "content BACD"
+
+
+
+## Class
+attr_reader, read only
+attr_writer, write only
+attr_accessor, get set = attr_reader + attr_writer
+
+
+def initialize
+end
