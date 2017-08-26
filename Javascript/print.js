@@ -5,3 +5,21 @@
 
 console.log("hello world!");
 
+function string2int(s) {
+	let ay = s.split('');
+
+	var s1 = ay.map(function(x){
+	     return x-0;
+	});
+
+
+
+	return s1.reduce(function(x, y) {
+		console.log(y);
+	  y = x*10 + y;
+	  console.log(y);
+	  return y;
+	});
+
+}
+string2int('12345');
