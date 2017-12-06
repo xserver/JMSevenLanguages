@@ -6,7 +6,7 @@ var path = require("path"); // 路径解析模块
 const ip = '127.0.0.1';
 const port = 8081;
 
-http.createServer( function(request, response) {
+http.createServer(function(request, response) {
 
     console.log("url = " + request.url);
     var pathname = url.parse(request.url).pathname;
@@ -15,7 +15,16 @@ http.createServer( function(request, response) {
         console.log("pathname = / , change to index.html");
         pathname = '/index.html';
     }
-    console.log("pathname = " + pathname);
+
+    if (pathname === '/test_ajax') {
+        console.log('This is test_ajax');
+        
+        //  这个是测试 ajax 的请求
+        response.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+        response.write('im ajax request !');
+        response.end();
+        return;
+    }
 
     //  动态呢 ？
     //  静态文件读取
@@ -30,7 +39,7 @@ http.createServer( function(request, response) {
             response.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
             response.write(data.toString());
         }
-        
+
         response.end(); //  发送响应数据
     });
 

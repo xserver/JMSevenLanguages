@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <script>
+
+    function success(text) {
+        var element = document.getElementById("result");
+		element.innerHTML = " success = " + text;
+    }
+
+    function fail(code) {
+        var textarea = document.getElementById('test-response-text');
+        textarea.value = 'Error code: ' + code;
+        alert(textarea.value);
+
+        var element = document.getElementById("result");
+		element.innerHTML = textarea.value;
+    }
+
+    function action() {
+        var request = new XMLHttpRequest();
+        //	observer
+        request.onreadystatechange = function() {
+        	//	如何使用 枚举
+			// case "loading":
+  			// case "interactive":
+  			// case "complete":
+
+  			var state = document.getElementById("state");
+        	state.innerHTML = state.innerHTML + "<br> readyState = " + request.readyState;
+
+            if (request.readyState === 4) {
+                if (request.status === 200) {
+                	state.innerHTML = state.innerHTML + "<br> 200 success";
+                    return success(request.responseText);
+                } else {
+                	state.innerHTML = state.innerHTML + " fail " + request.status;
+                    return fail(request.status);
+                }
+            }
+        }
+
+        // 发送请求:
+        request.open('GET', 'http://localhost:8081/test_ajax');
+        request.send('haha');	//	?
+
+        // alert('请求已发送');
+        document.getElementById("result").innerHTML = '请求已发送';
+    }
+    </script>
+</head>
+
+<body>
+	<button type="submit" onclick="action()"> 提交 </button>
+	<p id="result"> result </p>
+	<p id="state"> readyState </p>
+
+</body>
+
+</html>

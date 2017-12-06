@@ -18,9 +18,39 @@
 
 ## [nodejs 模拟前端请求](http://www.runoob.com/nodejs/nodejs-web-module.html)
 	> nodejs_client.js
+
+## Node.js 功能了解
+
+	Javascript 运行环境，使得 Javascript 脱离浏览器运行。
+	V8 JavaScript 引擎（浏览器），一个用 C++ 编写的超快解释器。
+	将 V8 改造为服务器，而不单单是在浏览器上运行 JavaScript。
+
+	进一步了解：解释型语言、虚拟机（动态编译）
+	执行机制：是编译后再执行，还是执行时才编译。
+
+	Node.js 的想象力，可以参考 Python、Shell、Ruby、Lua
 	
 
-## 前后模拟交互
-	AJAX
+## AJAX 原生交互
+	> AJAX/ajax.html
+
+## jQuery - AJAX 
+	> AJAX/jquery-ajax.html
+
+
+
+## Vue 了解
+
+## Webpack
+
+
+## 部署
+
+## Web 项目管理
+
+
+
+
+
 
 

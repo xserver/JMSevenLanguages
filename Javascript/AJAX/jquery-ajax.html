@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX by jQuery</title>
+    <!-- 目录管理 -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+    let url = 'http://localhost:8081/test_ajax';
+    
+    $("#result").text("Hello world!");
+
+    function action() {
+
+        var jqxhr = $.ajax(url, {
+            // dataType: 'json'
+        }).done(function(data) {
+            appen('成功, 收到的数据. ' + data);
+        }).fail(function(xhr, status) {
+            appen('失败: ' + xhr.status + ', 原因: ' + status);
+        }).always(function() {
+            appen('always End');
+        });
+        //     // 请求已经发送了
+    }
+
+    function appen(text) {
+        $('#result').html($('#result').text() + "<br> " + text);
+    }
+    //  get 自动将参数拼装到 url 后面
+    // var jqxhr = $.get(url, {
+    //     name: 'Bob Lee',
+    //     check: 1
+    // });
+    </script>
+</head>
+
+<body>
+    <button type="submit" onclick="action()"> 提交 </button>
+    <p id="result"> result </p>
+    <p id="state"> readyState </p>
+</body>
+
+</html>
