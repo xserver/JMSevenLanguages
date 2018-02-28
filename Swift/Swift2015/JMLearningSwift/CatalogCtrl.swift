@@ -25,7 +25,7 @@ class CatalogCtrl: UIViewController, UITableViewDataSource, UITableViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.purpleColor()
+        self.view.backgroundColor = UIColor.purple
         list = ["UITableExample", "B"]
         
         self.addViews();
@@ -40,7 +40,7 @@ class CatalogCtrl: UIViewController, UITableViewDataSource, UITableViewDelegate 
     }
     
     func addViews() {
-        tab = UITableView(frame: self.view.bounds, style: UITableViewStyle.Plain)
+        tab = UITableView(frame: self.view.bounds, style: UITableViewStyle.plain)
         tab.dataSource = self
         tab.delegate = self
         self.view.addSubview(self.tab)
@@ -52,16 +52,16 @@ class CatalogCtrl: UIViewController, UITableViewDataSource, UITableViewDelegate 
     
 //MARK: -
 //MARK: UITableViewDataSource
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = tableView.cellForRowAtIndexPath(indexPath)
+        var cell = tableView.cellForRow(at: indexPath as IndexPath)
         
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "test")
+            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "test")
         }
         
         cell?.textLabel?.text = list[indexPath.row]
@@ -71,7 +71,7 @@ class CatalogCtrl: UIViewController, UITableViewDataSource, UITableViewDelegate 
     
 // MARK: -
 // MARK: UITableViewDelegate
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
         
 
         let name = self.list[indexPath.row]

@@ -16,13 +16,11 @@ class UITableExample: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.whiteColor()
-        
+        self.view.backgroundColor = UIColor.white
         
         ObjectLife()
         ObjectLife("haha")
         ObjectLife(objectName: "haha2")
-
     }
     
     
@@ -34,10 +32,10 @@ class UITableExample: UIViewController {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.cellForRowAtIndexPath(indexPath)
+        var cell = tableView.cellForRow(at: indexPath as IndexPath)
         
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "test")
+            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "test")
         }
         
 //        cell?.textLabel?.text = list[indexPath.row]

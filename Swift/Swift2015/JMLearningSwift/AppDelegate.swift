@@ -18,9 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //  Create a window.
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        window = UIWindow(frame: UIScreen.screens.first!.bounds)
         window?.makeKeyAndVisible()
-        window?.backgroundColor = UIColor.brownColor()
+        window?.backgroundColor = UIColor.brown
         
         window?.rootViewController = UINavigationController(rootViewController: CatalogCtrl.init())
         
