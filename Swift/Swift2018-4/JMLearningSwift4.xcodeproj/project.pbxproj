@@ -12,6 +12,8 @@
 		6CD2C72D20476B7D00471BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD2C72B20476B7D00471BE0 /* Main.storyboard */; };
 		6CD2C72F20476B7D00471BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD2C72E20476B7D00471BE0 /* Assets.xcassets */; };
 		6CD2C73220476B7D00471BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD2C73020476B7D00471BE0 /* LaunchScreen.storyboard */; };
+		6CD2C73B2047901D00471BE0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6CD2C7392047901D00471BE0 /* README.md */; };
+		6CD2C73C2047901D00471BE0 /* Language.md in Resources */ = {isa = PBXBuildFile; fileRef = 6CD2C73A2047901D00471BE0 /* Language.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		6CD2C72E20476B7D00471BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CD2C73120476B7D00471BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CD2C73320476B7D00471BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CD2C7392047901D00471BE0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6CD2C73A2047901D00471BE0 /* Language.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Language.md; path = ../Language.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 		6CD2C71B20476B7C00471BE0 = {
 			isa = PBXGroup;
 			children = (
+				6CD2C73A2047901D00471BE0 /* Language.md */,
+				6CD2C7392047901D00471BE0 /* README.md */,
 				6CD2C72620476B7D00471BE0 /* JMLearningSwift4 */,
 				6CD2C72520476B7D00471BE0 /* Products */,
 			);
@@ -124,7 +130,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CD2C73220476B7D00471BE0 /* LaunchScreen.storyboard in Resources */,
+				6CD2C73C2047901D00471BE0 /* Language.md in Resources */,
 				6CD2C72F20476B7D00471BE0 /* Assets.xcassets in Resources */,
+				6CD2C73B2047901D00471BE0 /* README.md in Resources */,
 				6CD2C72D20476B7D00471BE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

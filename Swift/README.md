@@ -6,7 +6,7 @@ UI          系统 UIKit
 
 [apple swift resources](https://developer.apple.com/swift/resources/)
 
-
+[A Swift Tour](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html#//apple_ref/doc/uid/TP40014097-CH2-ID1)
 
 
 

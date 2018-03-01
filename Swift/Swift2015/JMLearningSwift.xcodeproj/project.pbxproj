@@ -41,8 +41,6 @@
 		D0F9FFE11AEF7CD300A6B99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0F9FFE21AEF7CD300A6B99C /* JMLearningSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMLearningSwiftTests.swift; sourceTree = "<group>"; };
 		D0F9FFEC1AEF7DC100A6B99C /* CatalogCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogCtrl.swift; sourceTree = "<group>"; };
-		D0F9FFEE1AEF7FD100A6B99C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D0F9FFF11AEFD65200A6B99C /* Language.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Language.md; sourceTree = "<group>"; };
 		D0F9FFF21AF0ADE400A6B99C /* UITableExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableExample.swift; sourceTree = "<group>"; };
 		D0F9FFF41AF1C9B900A6B99C /* Apple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
 		D0F9FFF61AF1D9A500A6B99C /* ObjectLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectLife.swift; sourceTree = "<group>"; };
@@ -69,8 +67,6 @@
 		D0F9FFBE1AEF7CD300A6B99C = {
 			isa = PBXGroup;
 			children = (
-				D0F9FFEE1AEF7FD100A6B99C /* README.md */,
-				D0F9FFF11AEFD65200A6B99C /* Language.md */,
 				D0F9FFC91AEF7CD300A6B99C /* JMLearningSwift */,
 				D0F9FFDF1AEF7CD300A6B99C /* JMLearningSwiftTests */,
 				D0F9FFC81AEF7CD300A6B99C /* Products */,
