@@ -33,13 +33,25 @@ func run() error {
 	}
 }
 
+func test() (string, error) {
+	return "this's test", &MyError{
+		time.Now(),
+		"it didn't work",
+	}
+}
+
 func main() {
-	if err := run(); err != nil {
-		fmt.Println(err)
+
+	if res, err := test(); err != nil {
+		fmt.Println(res)
 	}
 
-	fmt.Println(Sqrt(2))
-	fmt.Println(Sqrt(-2))
+	// if err := run(); err != nil {
+	// 	fmt.Println(err)
+	// }
+
+	// fmt.Println(Sqrt(2))
+	// fmt.Println(Sqrt(-2))
 }
 
 type ErrNegativeSqrt float64
