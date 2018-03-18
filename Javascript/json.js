@@ -8,7 +8,7 @@ console.log(obj)
 
 console.log(obj.name)
 
-
+// string to json
 text = '["array first obj", "222"]'
 obj = JSON.parse(text);
 console.log(obj[0])
