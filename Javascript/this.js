@@ -1,3 +1,6 @@
+
+// this 有坑：
+
 // var a = 10;
 // function test(){
 //     a = 100;
