@@ -23,5 +23,4 @@
 [requests](http://www.python-requests.org/en/master/)
 
 --
-
-以前写过一个爬虫入门的系列，[专栏：Python爬虫入门教程](http://blog.csdn.net/column/details/why-bug.html)
+[专栏：Python爬虫入门教程](http://blog.csdn.net/column/details/why-bug.html)
