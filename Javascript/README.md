@@ -8,6 +8,9 @@
 ## Sublime Text 运行 js
 	打印 hello, world
 
+## VSCode 运行 js
+	打印 hello, world
+
 
 ## 如何单步调试 js
 	#### 浏览器调试 js
@@ -21,7 +24,6 @@
 	> nodejs_client.js
 
 ## Node.js 功能了解
-
 	Javascript 运行环境，使得 Javascript 脱离浏览器运行。
 	V8 JavaScript 引擎（浏览器），一个用 C++ 编写的超快解释器。
 	将 V8 改造为服务器，而不单单是在浏览器上运行 JavaScript。
@@ -38,12 +40,9 @@
 ## jQuery - AJAX 
 	> AJAX/jquery-ajax.html
 
-
-
 ## Vue 了解
 
 ## Webpack
-
 
 ## 部署
 
